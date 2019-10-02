@@ -50,7 +50,7 @@ Follow the instructions to install the SDK for iOS and Android.
 ```javascript
 import RNZendeskChat from 'react-native-zendesk-ichat';
 
-ZendeskChat.startChat({
+RNZendeskChat.startChat({
             name: 'someName',
             email: 'someEmail',
             phone: 'somePhone',
