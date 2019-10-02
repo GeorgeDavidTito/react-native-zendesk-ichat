@@ -37,12 +37,12 @@ Follow the instructions to install the SDK for iOS and Android.
 	```
 3. (Only versions less than 0.60)  Append the following lines to `android/settings.gradle`:
   	```
-  	include ':wolox-zendesk-chat'
-  	project(':wolox-zendesk-chat').projectDir = new File(rootProject.projectDir, 	'../node_modules/wolox-zendesk-chat/android')
+  	include ':react-native-zendesk-ichat'
+  	project(':react-native-zendesk-ichat').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-zendesk-ichat/android')
   	```
 4. (Only versions less than 0.60)  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':wolox-zendesk-chat')
+      compile project(':react-native-zendesk-ichat')
   	```
 
 
