@@ -1,8 +1,8 @@
 {
-  "name": "react-native-zendesk-ichat",
+  "name": "@davidtito1992/react-native-zendesk-ichat",
   "title": "React Native Zendesk Chat",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "Simple module that allows displaying Zopim Chat from Zendesk for React Native in the latest versions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,12 @@
     "baseUrl": "https://github.com/davidtito1992/react-native-zendesk-ichat.git"
   },
   "keywords": [
-    "react-native"
+    "react-native-zendesk-chat",
+    "react-native-zopim-chat",
+    "rn-zendesk-chat",
+    "react-native-zendesk",
+    "react-native-zendesk-chat-android",
+    "react-native-zendesk-chat-ios"
   ],
   "author": {
     "name": "David Tito",
