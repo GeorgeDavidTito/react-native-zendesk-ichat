@@ -1,5 +1,5 @@
 {
-  "name": "@davidtito1992/react-native-zendesk-ichat",
+  "name": "react-native-zendesk-ichat",
   "title": "React Native Zendesk Chat",
   "version": "1.0.0",
   "description": "Simple module that allows displaying Zopim Chat from Zendesk for React Native in the latest versions.",
