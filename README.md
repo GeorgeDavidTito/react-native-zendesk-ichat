@@ -27,9 +27,13 @@ Follow the instructions to install the SDK for iOS and Android.
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.rnzendeskchat.RNZendeskChatPackage;` and `com.facebook.react.bridge.ReactApplicationContext;` to the imports at the top of the file
   - Add `static RNZendeskChatModule rnZendeskChatModule;` before the `onCreate` method;
-  - Add `ReactApplicationContext reactContext = new ReactApplicationContext(this);`
-    `rnZendeskChatModule = new RNZendeskChatModule(reactContext);`
-    `rnZendeskChatModule.init("key")` to the `onCreate` method;
+  - Add 
+  	```java 
+	ReactApplicationContext reactContext = new ReactApplicationContext(this);
+	rnZendeskChatModule = new RNZendeskChatModule(reactContext);
+	rnZendeskChatModule.init("key")
+	```
+	to the `onCreate` method;
   - (Only versions less than 0.60) Add `new RNZendeskChatPackage()` to the list returned by the `getPackages()` method
 2. Insert the following lines inside the allprojects repositories block in `android/build.gradle`:
   	```
