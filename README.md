@@ -17,10 +17,21 @@ Follow the instructions to install the SDK for iOS and Android.
 
 ##### Using CocoaPods (Best Approach)
 
+- Target minimum iOS version: '9.0' => ZDCChat 1.4.1
+- Target minimum iOS version: '9.3' => ZDCChat 1.4.2 (configured to use this version https://developer.zendesk.com/embeddables/docs/ios-chat-sdk/releasenotes#version-1.4.2)
+
 1. Go to `ios` ➜ `pod install`.
 2. Open up `ios/[...]/AppDelegate.m`
   - Add `#import <ZDCChat/ZDCChat.h>;`
-  - Add `[ZDCChat initializeWithAccountKey:@"key"];` before the `return YES;` in the `didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` method;
+  - Add 
+	```objective-c
+ 	-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+	{
+	...
+		[ZDCChat initializeWithAccountKey:@"key"]; // <- add this
+   		return YES;
+	}
+ 	```
 
 #### Android
 
