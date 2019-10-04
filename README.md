@@ -1,4 +1,7 @@
-# react-native-zendesk-ichat
+# :mega: react-native-zendesk-ichat
+
+
+[![Build Status](https://img.shields.io/npm/v/react-native-zendesk-ichat)](https://www.npmjs.com/package/react-native-zendesk-ichat)
 
 ## Getting started
 
@@ -10,10 +13,10 @@ Follow the instructions to install the SDK for iOS and Android.
 
 `$ react-native link react-native-zendesk-ichat` (Only versions less than 0.60)
 
-### Manual installation
+### :blue_book: Manual installation
 
 
-#### iOS
+#### :iphone: iOS
 
 ##### Using CocoaPods (Best Approach)
 
@@ -33,7 +36,7 @@ Follow the instructions to install the SDK for iOS and Android.
 	}
  	```
 
-#### Android
+#### :iphone: Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.rnzendeskchat.RNZendeskChatPackage;` and `com.facebook.react.bridge.ReactApplicationContext;` to the imports at the top of the file
@@ -60,8 +63,15 @@ Follow the instructions to install the SDK for iOS and Android.
       compile project(':react-native-zendesk-ichat')
   	```
 
+## 👍 Contribute
 
-## Usage
+Show your ❤️ and support by giving a ⭐. Any suggestions and pull request are welcome !
+
+### 📝 License
+
+MIT © [DavidTito](https://github.com/davidtito1992)
+
+## :rocket: Usage
 ```javascript
 import RNZendeskChat from 'react-native-zendesk-ichat';
 
