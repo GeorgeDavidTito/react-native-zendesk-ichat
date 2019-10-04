@@ -31,7 +31,7 @@ Follow the instructions to install the SDK for iOS and Android.
   	```java 
 	ReactApplicationContext reactContext = new ReactApplicationContext(this);
 	rnZendeskChatModule = new RNZendeskChatModule(reactContext);
-	rnZendeskChatModule.init("key")
+	rnZendeskChatModule.init("key");
 	```
 	to the `onCreate` method;
   - (Only versions less than 0.60) Add `new RNZendeskChatPackage()` to the list returned by the `getPackages()` method
@@ -40,9 +40,9 @@ Follow the instructions to install the SDK for iOS and Android.
 	  maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
 	```
 3. (Only versions less than 0.60)  Append the following lines to `android/settings.gradle`:
-  	```
+  	```java
   	include ':react-native-zendesk-ichat'
-  	project(':react-native-zendesk-ichat').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-zendesk-ichat/android')
+  	project(':react-native-zendesk-ichat').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-zendesk-ichat/android')
   	```
 4. (Only versions less than 0.60)  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
