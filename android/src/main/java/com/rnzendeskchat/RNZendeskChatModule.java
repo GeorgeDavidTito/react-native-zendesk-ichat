@@ -9,10 +9,6 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import com.zendesk.sdk.model.push.PushRegistrationResponse;
-import com.zendesk.sdk.network.impl.ZendeskConfig;
-import com.zendesk.service.ErrorResponse;
-import com.zendesk.service.ZendeskCallback;
 import com.zopim.android.sdk.api.ZopimChat;
 import com.zopim.android.sdk.model.VisitorInfo;
 import com.zopim.android.sdk.prechat.ZopimChatActivity;
@@ -61,5 +57,10 @@ public class RNZendeskChatModule extends ReactContextBaseJavaModule {
         if (activity != null) {
             activity.startActivity(new Intent(mReactContext, ZopimChatActivity.class));
         }
+    }
+    
+    @ReactMethod
+    public void setPushToken(String token){
+        ZopimChat.setPushToken(token);
     }
 }
