@@ -51,7 +51,7 @@ Follow the instructions to install the SDK for iOS and Android.
   - (Only versions less than 0.60) Add `new RNZendeskChatPackage()` to the list returned by the `getPackages()` method
 2. Insert the following lines inside the allprojects repositories block in `android/build.gradle`:
   	```
-	  maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+	  maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
 	```
 3. (Only versions less than 0.60)  Append the following lines to `android/settings.gradle`:
   	```java
