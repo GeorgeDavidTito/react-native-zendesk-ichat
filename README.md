@@ -1,4 +1,4 @@
-# :mega: react-native-zendesk-ichat
+# react-native-zendesk-ichat :mega:
 
 
 [![Build Status](https://img.shields.io/npm/v/react-native-zendesk-ichat)](https://www.npmjs.com/package/react-native-zendesk-ichat)
@@ -79,7 +79,6 @@ RNZendeskChat.startChat({
             name: 'someName',
             email: 'someEmail',
             phone: 'somePhone',
-            tags: ['someTag1', 'someTag2'],
-            department: 'someDepartment'
+            tags: ['someTag1', 'someTag2']
           })
 ```
